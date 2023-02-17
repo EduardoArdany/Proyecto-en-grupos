@@ -15,7 +15,7 @@ public class Menu extends javax.swing.JFrame {
      * Creates new form Menu
      */
     public Menu() {
-        initComponents();
+        
     }
 
     /**
@@ -31,6 +31,10 @@ public class Menu extends javax.swing.JFrame {
         btnRegistroPropietario = new javax.swing.JButton();
         btnReparacion = new javax.swing.JButton();
         btnEntrega = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,35 +46,69 @@ public class Menu extends javax.swing.JFrame {
 
         btnEntrega.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pedido.png"))); // NOI18N
 
+        jLabel1.setText("INGRESO EQUIPO");
+
+        jLabel2.setText("INGRESO DE PROPIETARIOS");
+
+        jLabel3.setText("ENVIAR A REPARACIÓN");
+
+        jLabel4.setText("ENTREGAR EQUIPO");
+
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(btnIngresoEquipo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 177, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
-                        .add(161, 161, 161)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(btnEntrega)
-                            .add(btnReparacion)
-                            .add(btnRegistroPropietario))))
-                .addContainerGap(597, Short.MAX_VALUE))
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                        .add(btnRegistroPropietario)
+                        .add(layout.createSequentialGroup()
+                            .add(64, 64, 64)
+                            .add(btnIngresoEquipo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 177, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(257, 257, 257)))
+                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                        .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                            .add(96, 96, 96)
+                            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                                .add(jLabel3)
+                                .add(btnReparacion))
+                            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(layout.createSequentialGroup()
+                                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(btnEntrega))
+                                .add(layout.createSequentialGroup()
+                                    .add(163, 163, 163)
+                                    .add(jLabel4)
+                                    .add(0, 0, Short.MAX_VALUE))))
+                        .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                            .add(121, 121, 121)
+                            .add(jLabel1)
+                            .add(146, 146, 146)
+                            .add(jLabel2))))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
+                .add(40, 40, 40)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(layout.createSequentialGroup()
+                        .add(btnIngresoEquipo)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel1))
+                    .add(layout.createSequentialGroup()
+                        .add(btnRegistroPropietario)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel2)))
                 .add(43, 43, 43)
-                .add(btnIngresoEquipo)
-                .add(26, 26, 26)
-                .add(btnRegistroPropietario)
-                .add(29, 29, 29)
-                .add(btnReparacion)
-                .add(29, 29, 29)
-                .add(btnEntrega)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(btnReparacion)
+                    .add(btnEntrega))
+                .add(18, 18, 18)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jLabel3)
+                    .add(jLabel4))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
@@ -104,10 +142,8 @@ public class Menu extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Menu().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Menu().setVisible(true);
         });
     }
 
@@ -116,5 +152,9 @@ public class Menu extends javax.swing.JFrame {
     public javax.swing.JButton btnIngresoEquipo;
     public javax.swing.JButton btnRegistroPropietario;
     public javax.swing.JButton btnReparacion;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
