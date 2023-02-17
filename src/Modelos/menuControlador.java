@@ -19,7 +19,8 @@ public class menuControlador implements ActionListener{
     Reparacion VistaReparacion;
     public DefaultTableModel TablaReparacion = new DefaultTableModel();
     
-    public menuControlador(Menu VistaMenu, Entrega VistaEntrega, Equipos VistaEquipos, Propietarios VistaPropietarios, Reparacion VistaReparacion){
+    public menuControlador(Menu VistaMenu, Entrega VistaEntrega, Equipos VistaEquipos, 
+            Propietarios VistaPropietarios, Reparacion VistaReparacion){
         this.VistaMenu = VistaMenu;
         this.VistaEntrega = VistaEntrega;
         this.VistaEquipos =VistaEquipos;
@@ -35,11 +36,6 @@ public class menuControlador implements ActionListener{
         //Levantar la vista principal
         this.VistaMenu.setExtendedState(Menu.MAXIMIZED_BOTH);
         this.VistaMenu.setVisible(true);
-        
-        //Cargar la tabla
-        
-        
-        
         
     }
     
