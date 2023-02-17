@@ -6,7 +6,7 @@ public class main {
      */
     public static void main(String[] args) {
         // ESTA ES LA VERSION PRINCIPAL
-        System.out.println("hola mundo");
+      
         //hola
     }
     
