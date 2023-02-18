@@ -1,5 +1,5 @@
 
-import Modelos.usuariosControlador;
+import pckControladores.usuariosControlador;
 import pckModelos.ModelAgregar;
 import pckVistas.Equipos;
 import java.awt.Menu;

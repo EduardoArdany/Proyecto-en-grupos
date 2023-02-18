@@ -1,5 +1,5 @@
 
-package Modelos;
+package pckControladores;
 
 public class entregaControlador {
     

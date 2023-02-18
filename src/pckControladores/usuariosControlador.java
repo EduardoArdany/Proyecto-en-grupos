@@ -1,5 +1,5 @@
 
-package Modelos;
+package pckControladores;
 
 import java.awt.Menu;
 import java.awt.event.ActionEvent;
