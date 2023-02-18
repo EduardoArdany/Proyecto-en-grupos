@@ -13,7 +13,8 @@ public class main {
      
         Interfaz VistaMenu = new Interfaz();
         Equipos VistaEquipos = new Equipos();
-        ModelAgregar ModeloUsuarios = new ModelAgregar();
+        //ModelAgregar ModeloUsuarios = new ModelAgregar();
+        //ModelAgregar EquiposModel = new ModelAgregar();
         ModelAgregar EquiposModel = new ModelAgregar();
         
         usuariosControlador controladorU = new usuariosControlador(VistaMenu,VistaEquipos, EquiposModel);

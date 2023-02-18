@@ -13,7 +13,6 @@ public class EquiposModel {
         this.tipo = tipo;
         this.problema = problema;              
     }
-
     public String getMarca() {
         return marca;
     }

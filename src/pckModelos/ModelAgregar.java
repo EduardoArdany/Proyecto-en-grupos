@@ -7,16 +7,16 @@ import java.util.ArrayList;
 public class ModelAgregar {
 
     public ArrayList<EquiposModel>ListaEquipos = new ArrayList<EquiposModel>();  
-    public ArrayList<entregas>ListaEntregas = new ArrayList<entregas>();
+    /*public ArrayList<entregas>ListaEntregas = new ArrayList<entregas>();
     public ArrayList<propietarios>ListaPropietarios = new ArrayList<propietarios>();
     public ArrayList<reparacion>ListaReparaciones = new ArrayList<reparacion>();
-    
+    */
 //EQUIPOS    
 public void IngresarEquipos(String marca, String modelo, String tipo, String problema){
     EquiposModel NuevoEquipo = new EquiposModel(marca, modelo, tipo, problema);
     this.ListaEquipos.add(NuevoEquipo);
 }
-//ENTREGAS
+/*//ENTREGAS
 public void IngresarEntregas(String codigo, String nombre, String fecha, String descripcion){
     entregas NuevaEntrega = new entregas(codigo, nombre, fecha, descripcion);
     this.ListaEntregas.add(NuevaEntrega);
@@ -32,12 +32,12 @@ public void IngresarReparaciones(String codigoR, String descripcionR, String tec
     reparacion NuevaReparacion = new reparacion(codigoR, descripcionR, tecnico, fechaR);
     this.ListaReparaciones.add(NuevaReparacion);
 }
-
+*/
 
 public ArrayList ListarEquipos(){
     return ListaEquipos;
 }
-public ArrayList ListarEntregas(){
+/*public ArrayList ListarEntregas(){
     return ListaEntregas;
 }
 public ArrayList ListarPropietarios(){
@@ -45,6 +45,6 @@ public ArrayList ListarPropietarios(){
 }
 public ArrayList ListarReparaciones(){
     return ListaReparaciones;
-}
+}*/
 
 }

@@ -24,7 +24,7 @@ public class usuariosControlador implements ActionListener{
       this.VistaEquipos = VistaEquipos;
       this.ModelAgregar = ModelAgregar;
       
-      this.VistaMenu.btnIngresoEquipo.addActionListener(this);
+      //this.VistaMenu.btnIngresoEquipo.addActionListener(this);
       
       this.TablaUsuarios.addColumn("Marca");
       this.TablaUsuarios.addColumn("Modelo");
