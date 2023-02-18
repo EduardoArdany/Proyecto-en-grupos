@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 public class ModelAgregar {
 
-    public ArrayList<equipos>ListaEquipos = new ArrayList<equipos>();  
+    public ArrayList<EquiposModel>ListaEquipos = new ArrayList<EquiposModel>();  
     public ArrayList<entregas>ListaEntregas = new ArrayList<entregas>();
     public ArrayList<propietarios>ListaPropietarios = new ArrayList<propietarios>();
     public ArrayList<reparacion>ListaReparaciones = new ArrayList<reparacion>();
     
 //EQUIPOS    
 public void IngresarEquipos(String marca, String modelo, String tipo, String problema){
-    equipos NuevoEquipo = new equipos(marca, modelo, tipo, problema);
+    EquiposModel NuevoEquipo = new EquiposModel(marca, modelo, tipo, problema);
     this.ListaEquipos.add(NuevoEquipo);
 }
 //ENTREGAS
