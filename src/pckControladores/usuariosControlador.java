@@ -1,28 +1,30 @@
 
 package pckControladores;
 
-import java.awt.Menu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
 import pckModelos.ModelAgregar;
 import pckModelos.EquiposModel;
 import pckVistas.Equipos;
+import pckVistas.Interfaz;
 
 
 public class usuariosControlador implements ActionListener{
 
-    Menu VistaMenu;
+    Interfaz VistaMenu;
     Equipos VistaEquipos;
     EquiposModel equipos;
     ModelAgregar ModelAgregar;
     public DefaultTableModel TablaUsuarios = new DefaultTableModel();
     
-    public usuariosControlador(Menu VistaMenu, Equipos VistaEquipos,  ModelAgregar ModelAgregar, EquiposModel equipos){
+    public usuariosControlador(Interfaz VistaMenu, Equipos VistaEquipos,  ModelAgregar ModelAgregar){
         
       this.VistaMenu = VistaMenu;
-      this.equipos = equipos;
+      this.VistaEquipos = VistaEquipos;
       this.ModelAgregar = ModelAgregar;
+      
+      this.VistaMenu.btnIngresoEquipo.addActionListener(this);
       
       this.TablaUsuarios.addColumn("Marca");
       this.TablaUsuarios.addColumn("Modelo");

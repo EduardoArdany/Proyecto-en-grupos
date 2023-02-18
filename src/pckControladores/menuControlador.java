@@ -6,20 +6,20 @@ import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
 import pckVistas.Entrega;
 import pckVistas.Equipos;
-import pckVistas.Menu;
+import pckVistas.Interfaz;
 import pckVistas.Propietarios;
 import pckVistas.Reparacion;
 
 public class menuControlador implements ActionListener{
 
-    Menu VistaMenu;
+    Interfaz VistaMenu;
     Entrega VistaEntrega;
     Equipos VistaEquipos;
     Propietarios VistaPropietarios;
     Reparacion VistaReparacion;
     public DefaultTableModel TablaReparacion = new DefaultTableModel();
     
-    public menuControlador(Menu VistaMenu, Entrega VistaEntrega, Equipos VistaEquipos, 
+    public menuControlador(Interfaz VistaMenu, Entrega VistaEntrega, Equipos VistaEquipos, 
             Propietarios VistaPropietarios, Reparacion VistaReparacion){
         this.VistaMenu = VistaMenu;
         this.VistaEntrega = VistaEntrega;
@@ -34,7 +34,7 @@ public class menuControlador implements ActionListener{
         this.VistaMenu.btnEntrega.addActionListener(this);
         
         //Levantar la vista principal
-        this.VistaMenu.setExtendedState(Menu.MAXIMIZED_BOTH);
+        this.VistaMenu.setExtendedState(Interfaz.MAXIMIZED_BOTH);
         this.VistaMenu.setVisible(true);
         
     }

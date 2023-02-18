@@ -2,19 +2,21 @@
 import pckControladores.usuariosControlador;
 import pckModelos.ModelAgregar;
 import pckVistas.Equipos;
-import java.awt.Menu;
+import pckVistas.Entrega;
 import pckModelos.EquiposModel;
+import pckVistas.Interfaz;
 
 
 public class main {
 
     public static void main(String[] args) {
      
-        Menu VistaMenu = new Menu();
-        ModelAgregar ModeloUsuarios = new ModelAgregar();
+        Interfaz VistaMenu = new Interfaz();
         Equipos VistaEquipos = new Equipos();
-        EquiposModel Equipos = new EquiposModel();
+        ModelAgregar ModeloUsuarios = new ModelAgregar();
+        ModelAgregar EquiposModel = new ModelAgregar();
         
-        usuariosControlador UsuariosController = new usuariosControlador(VistaMenu, VistaEquipos, ModeloUsuarios, Equipos);
+        usuariosControlador controladorU = new usuariosControlador(VistaMenu,VistaEquipos, EquiposModel);
+ 
     }
 }
