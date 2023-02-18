@@ -15,14 +15,14 @@ public class usuariosControlador implements ActionListener{
     Interfaz VistaMenu;
     Equipos VistaEquipos;
     EquiposModel equipos;
-    ModelAgregar ModelAgregar;
+    ModelAgregar ModeloAgregar;
     public DefaultTableModel TablaUsuarios = new DefaultTableModel();
     
-    public usuariosControlador(Interfaz VistaMenu, Equipos VistaEquipos,  ModelAgregar ModelAgregar){
+    public usuariosControlador(Interfaz VistaMenu, Equipos VistaEquipos,  ModelAgregar ModeloAgregar){
         
       this.VistaMenu = VistaMenu;
       this.VistaEquipos = VistaEquipos;
-      this.ModelAgregar = ModelAgregar;
+      this.ModeloAgregar= ModeloAgregar;
       
       //this.VistaMenu.btnIngresoEquipo.addActionListener(this);
       
@@ -44,12 +44,12 @@ public class usuariosControlador implements ActionListener{
         this.VistaEquipos.setVisible(true);
         }  
     if(e.getSource() ==this.VistaEquipos.btnIngresar){
-        this.ModelAgregar.IngresarEquipos(this.VistaEquipos.txtMarca.getText(), this.VistaEquipos.txtModelo.getText(),
+        this.ModeloAgregar.IngresarEquipos(this.VistaEquipos.txtMarca.getText(), this.VistaEquipos.txtModelo.getText(),
                 this.VistaEquipos.txtProblema.getText(), this.VistaEquipos.txtTipo.getText());
         
-        this.TablaUsuarios.addRow(new Object[]{this.ModelAgregar.ListaEquipos.get(0).getMarca(),
-           this.ModelAgregar.ListaEquipos.get(0).getModelo(), 
-           this.ModelAgregar.ListaEquipos.get(0).getProblema(), this.ModelAgregar.ListaEquipos.get(0).getTipo()});
+        this.TablaUsuarios.addRow(new Object[]{this.ModeloAgregar.ListaEquipos.get(0).getMarca(),
+           this.ModeloAgregar.ListaEquipos.get(0).getModelo(), 
+           this.ModeloAgregar.ListaEquipos.get(0).getProblema(), this.ModeloAgregar.ListaEquipos.get(0).getTipo()});
     }
     }
     

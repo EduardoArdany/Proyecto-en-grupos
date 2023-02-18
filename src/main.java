@@ -15,9 +15,9 @@ public class main {
         Equipos VistaEquipos = new Equipos();
         //ModelAgregar ModeloUsuarios = new ModelAgregar();
         //ModelAgregar EquiposModel = new ModelAgregar();
-        ModelAgregar EquiposModel = new ModelAgregar();
+        ModelAgregar ModeloAgregar = new ModelAgregar();
         
-        usuariosControlador controladorU = new usuariosControlador(VistaMenu,VistaEquipos, EquiposModel);
+        usuariosControlador controladorU = new usuariosControlador(VistaMenu,VistaEquipos, ModeloAgregar);
  
     }
 }
